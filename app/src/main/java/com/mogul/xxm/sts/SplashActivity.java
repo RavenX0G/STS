@@ -1,13 +1,36 @@
 package com.mogul.xxm.sts;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.mogul.xxm.sts.base.BaseActivity;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+    protected boolean isShowBacking() {
+        return false;
+    }
+
+    @Override
+    public void showBack() {
+        super.showBack();
+    }
+
+    @Override
+    protected int attachLayoutRes() {
+        return R.layout.activity_splash;
+    }
+
+    @Override
+    protected void initInjector() {
+
+    }
+
+    @Override
+    protected void initViews() {
+
+    }
+
+    @Override
+    protected void updateViews() {
+
     }
 }

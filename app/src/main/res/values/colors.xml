@@ -3,4 +3,34 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="appThemeColor">#FFD200</color>
+
+    <!--背景色-->
+    <color name="colorPageBg">#F5F5F5</color>
+    <!--内容背景色-->
+    <color name="colorContentBg">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <!--引用背景色-->
+    <color name="colorReferenceBg">#DEDEDE</color>
+    <!--标题背景色-->
+    <color name="colorTitleBg">#FFD200</color>
+    <!--标题色-->
+    <color name="colorTitleText">#323232</color>
+    <!--主文本颜色-->
+    <color name="colorMajorText">#323232</color>
+    <!--副文本色-->
+    <color name="colorSubText">#A7A7A7</color>
+    <!--突出文本色-->
+    <color name="colorHighLightText">#FC6739</color>
+
+
+    <color name="mn_colorDialogWindowBg">#00000000</color>
+    <color name="mn_colorDialogTrans">#00000000</color>
+    <color name="mn_colorDialogViewBg">#dd000000</color>
+    <color name="mn_colorDialogTextColor">#ffffff</color>
+    <color name="mn_colorDialogProgressBarColor">#ffffff</color>
+    <color name="mn_colorDialogImageTintColor">#ffffff</color>
+
+
 </resources>
