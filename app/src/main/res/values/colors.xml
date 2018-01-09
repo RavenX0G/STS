@@ -19,6 +19,7 @@
     <color name="colorTitleText">#323232</color>
     <!--主文本颜色-->
     <color name="colorMajorText">#323232</color>
+    <color name="colorUnSelectedText">#DBDBDB</color>
     <!--副文本色-->
     <color name="colorSubText">#A7A7A7</color>
     <!--突出文本色-->
