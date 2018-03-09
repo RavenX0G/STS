@@ -7,6 +7,18 @@
     android:orientation="vertical"
     tools:context="com.mogul.xxm.sts.ui.MainActivity">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_data"
+        android:text="添加数据"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_data"
+        android:text="获取数据"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

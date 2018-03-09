@@ -1,5 +1,6 @@
 package com.mogul.xxm.sts.ui;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTabHost;
@@ -10,10 +11,14 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
+import com.mogul.xxm.sts.BmobBean.SiteBean;
 import com.mogul.xxm.sts.R;
 import com.mogul.xxm.sts.base.BaseActivity;
+import com.mogul.xxm.sts.widget.MToast;
 
 import butterknife.BindView;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.SaveListener;
 
 public class MainActivity extends BaseActivity implements TabHost.OnTabChangeListener{
 
@@ -28,7 +33,7 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
     private FragmentTabHost mTabHost;
     //    当前选中的views的下标
     private int currentIndex = 0;
-
+    private Context mContext;
     @Override
     protected int attachLayoutRes() {
         return R.layout.activity_main;
@@ -41,6 +46,7 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
 
     @Override
     protected void initViews() {
+        mContext = this;
         mFragments = MainGenerator.getFragments();
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         // 关联TabHost
